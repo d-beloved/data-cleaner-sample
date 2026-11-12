@@ -1,0 +1,22 @@
+{
+  "text_columns": ["Review Text"],
+  "date_columns": ["Submitted At"],
+  "id_columns": ["Review ID"],
+  "numeric_columns": ["Rating"],
+  "title_case_columns": ["Customer Name"],
+  "required_columns": ["Review Text"],
+  "dayfirst": false,
+  "min_text_length": 10,
+  "mask_pii": true,
+  "add_tokens": true,
+  "remove_stopwords": true,
+  "category_maps": {
+    "Country": {
+      "U.S.A.": "USA",
+      "United States": "USA"
+    }
+  },
+  "fill_values": {
+    "Customer Name": "Anonymous"
+  }
+}
