@@ -1,0 +1,105 @@
+{
+  "rows_in": 58,
+  "columns_in": 8,
+  "columns_renamed": {
+    "Review ID": "review_id",
+    " Customer Name": "customer_name",
+    "Country": "country",
+    "Product Category": "product_category",
+    "Rating": "rating",
+    "Review Text": "review_text",
+    "Submitted At": "submitted_at",
+    "Notes": "notes"
+  },
+  "null_tokens_replaced": 95,
+  "columns_dropped": [
+    "notes"
+  ],
+  "empty_rows_dropped": 1,
+  "numeric_columns": {
+    "review_id": {
+      "invalid_set_to_missing": 0,
+      "invalid_examples": []
+    },
+    "rating": {
+      "invalid_set_to_missing": 10,
+      "invalid_examples": [
+        "five"
+      ]
+    }
+  },
+  "date_columns": {
+    "submitted_at": {
+      "unparseable_set_to_missing": 16,
+      "unparseable_examples": [
+        "2026-02-30",
+        "not sure"
+      ]
+    }
+  },
+  "id_columns": [
+    "review_id"
+  ],
+  "text_columns": [
+    "review_text"
+  ],
+  "categories_standardized": {
+    "customer_name": {
+      "values_changed": 9,
+      "labels": [
+        "Ada Obi",
+        "Bot Account",
+        "Chen Wei",
+        "Fatima Bello",
+        "John Smith",
+        "Lars Berg",
+        "Maria Garcia",
+        "Priya Nair",
+        "Tom O'Neil"
+      ]
+    },
+    "country": {
+      "values_changed": 40,
+      "labels": [
+        "Canada",
+        "Nigeria",
+        "UK",
+        "USA"
+      ]
+    },
+    "product_category": {
+      "values_changed": 33,
+      "labels": [
+        "Books",
+        "Electronics",
+        "Home & Kitchen",
+        "Toys"
+      ]
+    }
+  },
+  "values_filled": {
+    "customer_name": 12
+  },
+  "duplicates_removed": 7,
+  "rows_dropped": {
+    "missing_required": 1,
+    "mostly_empty": 0,
+    "text_too_short": 1
+  },
+  "rows_out": 48,
+  "columns_out": [
+    "review_id",
+    "customer_name",
+    "country",
+    "product_category",
+    "rating",
+    "review_text",
+    "submitted_at",
+    "review_text_clean",
+    "review_text_tokens"
+  ],
+  "missing_after": {
+    "rating": 19,
+    "submitted_at": 16
+  }
+}
